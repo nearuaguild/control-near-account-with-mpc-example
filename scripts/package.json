@@ -1,0 +1,14 @@
+{
+  "name": "control-near-account-with-mpc-example",
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "node --env-file=.env setup.js",
+    "transfer": "node --env-file=.env transfer.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "elliptic": "^6.5.5",
+    "js-sha3": "0.9.3",
+    "near-api-js": "^5.0.1"
+  }
+}

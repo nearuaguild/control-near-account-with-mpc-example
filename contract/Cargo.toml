@@ -1,0 +1,26 @@
+[package]
+name = "control-near-account-with-mpc-example"
+description = "An example showing how to act on behalf of NEAR account from a smart contract and MPC"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/nearuaguild/control-near-account-with-mpc-example"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+near-sdk = "5.4"
+sha2 = "0.10.8"
+hex = "0.4.3"
+omni-transaction = { git = "https://github.com/near/omni-transaction-rs" }
+
+[profile.release]
+codegen-units = 1
+# Tell `rustc` to optimize for small code size.
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+# Opt into extra safety checks on arithmetic operations https://stackoverflow.com/a/64136471/249801
+overflow-checks = true
