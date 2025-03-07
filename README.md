@@ -4,6 +4,10 @@ This is a simple example showing how to use chain signatues to allow your accoun
 
 This example provides scripts to help you create an account on whose behalf you're acting and send Near tokens from its account to yours
 
+## Contract
+
+The contract from this repository is rolled out on testnet at address `broken-rock.testnet`, and is available for testing.
+
 ## Running the project
 
 Enter the scripts directory and install the dependencies:
